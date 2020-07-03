@@ -15,8 +15,8 @@ Now when someone needs an API, instead of them waiting, we can use Terraform to 
 1. I copy the files to Azure Cloud Shell as it has Terraform already included.
 1. Create a new folder for your api under the examples.
 1. Create your OpenAPI spec in this folder.
-1. Copy the main.tf located in examples/echo-api
-1. Update the values as needed
+1. Copy the main.tf located in examples/echo-api to this new api folder.
+1. Update the variable values in the new main.tf as needed
 1. Execute the Terraform process (init, plan, apply)
 
 ## Caveats
