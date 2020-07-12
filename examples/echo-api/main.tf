@@ -16,4 +16,5 @@ module "mock-api" {
     apim-api-revision = "1"
     apim-api-display-name = "Echo Mock Api"
     apim-api-path = "echo-mock"
+    apim-policy-file = "mock-policy.xml"
 }
