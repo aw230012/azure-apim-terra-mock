@@ -32,3 +32,6 @@ variable "apim-api-display-name" {
 variable "apim-api-path" {
     type = string
 }
+variable "apim-policy-file" {
+    type = string
+}

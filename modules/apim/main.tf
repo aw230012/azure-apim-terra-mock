@@ -15,15 +15,7 @@ resource "azurerm_api_management" "mock-apim" {
   sku_name = var.api-sku
 
   policy {
-    xml_content = <<XML
-    <policies>
-      <inbound><mock-response status-code="200" content-type="application/json" /></inbound>
-      <backend />
-      <outbound />
-      <on-error />
-    </policies>
-XML
-
+    xml_content = file(var.apim-policy-file)
   }
 }
 resource "azurerm_api_management_api" "mock-api" {
